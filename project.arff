@@ -1,4 +1,27 @@
-SalaryUSD,Country,PrimaryDatabase,YearsWithThisDatabase,EmploymentStatus,JobTitle,ManageStaff,YearsWithThisTypeOfJob,HowManyCompanies,OtherPeopleOnYourTeam,PopulationOfLargestCityWithin20Miles,EmploymentSector,CareerPlansThisYear,Gender,DatabaseServers,Education,EducationIsComputerRelated,Certifications,HoursWorkedPerWeek,TelecommuteDaysPerWeek
+@relation responses_discretized-weka.filters.unsupervised.attribute.Remove-R1
+
+@attribute SalaryUSD {Low,'Very High',High,'Very Low',Mid}
+@attribute Country {Sweden,USA,UK,Pakistan,Paraguay,India,Serbia-and-Montenegro,Germany,Canada,Dominican-Republic,Slovakia,Brazil,France,Poland,Romania,Ireland,South-Africa,Portugal,CostaRica,Israel,Argentina,Peru,Australia,Venezuela,Spain,Belgium,Malaysia,Netherlands,Russia,Italy,Finland,Turkey,Austria,New-Zealand,Honduras,UAE,Guernsey,Norway,Luxembourg,PuertoRico,Guatemala,Greece,Denmark,Lithuania,Ukraine,Philippines,Hungary,Estonia,Caymans,Croatia,Indonesia,Thailand,Switzerland,Slovenia,Bosnia,Cyprus,Bulgaria,Singapore,Colombia,Chile,Iceland,Macedonia,Jersey,Latvia,CzechRepublic,Mexico,Bangladesh,China,Iran,Qatar,Ecuador,Uruguay,SaudiArabia,Vanuatu,Taiwan,Maldives,Armenia,Swaziland,Georgia,HK,Syria,Bahrain,Moldova,Nicaragua,Jamaica,Malta,Jordan,Uganda,Belarus,Nepal,Ghana,ElSalvador,Albania,Bolivia,Vietnam,Bermuda,Kenya}
+@attribute PrimaryDatabase {M,P,A,MA,O,MS,RDS,MDB,DB2,SQLI,C,SAP,T,E}
+@attribute YearsWithThisDatabase numeric
+@attribute EmploymentStatus {E,EC,IC,P,I}
+@attribute JobTitle {D,DBAP,DBAG,M,DA,DT,A,DBAD,E,AN,DS,DBA,PDE,DO,T,DBS,C,SA,S,DBABI,SRC,AC}
+@attribute ManageStaff {Y,N}
+@attribute YearsWithThisTypeOfJob numeric
+@attribute HowManyCompanies numeric
+@attribute OtherPeopleOnYourTeam numeric
+@attribute PopulationOfLargestCityWithin20Miles {t,m,C,c,T}
+@attribute EmploymentSector {PB,E,SG,LG,NP,FG,S}
+@attribute CareerPlansThisYear {S,C,SR,SE}
+@attribute Gender {M,F,NB}
+@attribute DatabaseServers numeric
+@attribute Education {'Bachelors (4 years)','None (no degree completed)',Masters,'Associates (2 years)',Doctorate/PhD}
+@attribute EducationIsComputerRelated {Yes,No}
+@attribute Certifications {N,YesValid,YesExpired}
+@attribute HoursWorkedPerWeek numeric
+@attribute TelecommuteDaysPerWeek {zero,five,four,one,three,two}
+
+@data
 Low,Sweden,M,4,E,D,Y,4,1,0,t,PB,S,M,?,?,?,?,?,?
 'Very High',USA,M,15,E,DBAP,N,25,5,0,m,PB,S,M,?,?,?,?,?,?
 High,USA,M,12,E,DBAG,Y,6,4,1,C,PB,S,M,?,?,?,?,?,?
